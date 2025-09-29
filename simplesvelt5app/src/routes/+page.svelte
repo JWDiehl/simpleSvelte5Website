@@ -4,10 +4,11 @@
 	
 	let count = $state(0);
 	let b = 4;
+    let randomTextType = $state("");
 
 	// function to increment the count
 	const whenBtnIsClicked = (a) => {
-		count++;
+		count += 1;
 	};
 </script>
 
@@ -15,8 +16,8 @@
 <div class="min-h-screen flex flex-col">
 	<Header title="Svelte 5 Counter App" />
 	
-	<main class="flex-grow bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
-		<div class="max-w-md mx-auto bg-white rounded-xl shadow-lg p-8 text-center">
+	<main class="flex-grow flex items-center justify-center">
+		<div class="max-w-md mx-auto bg-white bg-opacity-90 rounded-xl shadow-lg p-8 text-center backdrop-blur-sm">
 			<h1 class="text-4xl font-bold text-gray-800 mb-4">Hello Svelte 5!</h1>
 			<p class="text-gray-600 mb-6">Count: {count}</p>
 			<button 
@@ -25,6 +26,10 @@
 			>
 				Click me! ({count})
 			</button>
+
+            <input type="text" bind:value={randomTextType} />
+
+            <p>{randomTextType}</p>
 		</div>
 	</main>
 	

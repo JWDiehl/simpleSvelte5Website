@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Tropical background */
+body {
+	background-image: url('/PalmTree On Film.JPG');
+	background-size: cover;
+	background-position: center top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+
+/* Remove overlay for consistent background */
+
+/* Ensure header is visible */
+header {
+	position: relative;
+	z-index: 10;
+	background-color: transparent !important;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+	backdrop-filter: blur(3px);
+}
