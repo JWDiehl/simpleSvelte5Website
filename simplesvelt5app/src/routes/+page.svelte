@@ -1,19 +1,32 @@
 <script>
+	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	
 	let count = $state(0);
-    let b = 4;
+	let b = 4;
 
-// function to increment the count
-
-    const whenBtnIsClicked = () => {
-
+	// function to increment the count
+	const whenBtnIsClicked = () => {
+		count++;
+	};
 </script>
 
 
-<div
-	class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center"
->
-	<div class="max-w-md mx-auto bg-white rounded-xl shadow-lg p-8 text-center">
-		<h1 class="text-4xl font-bold text-gray-800 mb-4">Hello</h1>
-		<button>text</button>
-	</div>
+<div class="min-h-screen flex flex-col">
+	<Header title="Svelte 5 Counter App" />
+	
+	<main class="flex-grow bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+		<div class="max-w-md mx-auto bg-white rounded-xl shadow-lg p-8 text-center">
+			<h1 class="text-4xl font-bold text-gray-800 mb-4">Hello Svelte 5!</h1>
+			<p class="text-gray-600 mb-6">Count: {count}</p>
+			<button 
+				onclick={whenBtnIsClicked}
+				class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors"
+			>
+				Click me! ({count})
+			</button>
+		</div>
+	</main>
+	
+	<Footer />
 </div>
