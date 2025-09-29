@@ -6,7 +6,7 @@
 	let b = 4;
 
 	// function to increment the count
-	const whenBtnIsClicked = () => {
+	const whenBtnIsClicked = (a) => {
 		count++;
 	};
 </script>
