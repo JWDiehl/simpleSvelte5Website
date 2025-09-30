@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Apply Futura-style fonts globally */
+/* Apply Phillies-style fonts globally */
 body {
-	font-family: 'Space Grotesk', 'Orbitron', 'Futura', 'Futura-Medium', 'Futura Medium', 'FuturaStd-Medium', 'Trebuchet MS', 'Arial', sans-serif !important;
+	font-family: 'Merriweather', 'Playfair Display', 'Libre Baskerville', 'Times New Roman', serif !important;
 	background-image: url('/PalmTree On Film.JPG');
 	background-size: cover;
 	background-position: center top;
@@ -14,14 +14,24 @@ body {
 	transition: all 0.3s ease;
 }
 
+/* Custom Theme Colors - You'll Definitely See These! */
+:root {
+	--theme-primary: #E81828; /* Bright cyan blue */
+	--theme-secondary: #002d72; /* Vibrant purple */
+	--theme-accent: #FFFFFF; /* Golden yellow */
+	--theme-success: #3a833c; /* Emerald green */
+	--theme-warning: #6F263D; /* Orange */
+	--theme-error: #6BACE4; /* Red */
+}
+
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Orbitron', 'Space Grotesk', 'Futura', 'Futura-Medium', 'Futura Medium', 'FuturaStd-Medium', 'Trebuchet MS', 'Arial', sans-serif !important;
+	font-family: 'Playfair Display', 'Merriweather', 'Libre Baskerville', 'Times New Roman', serif !important;
 	font-weight: 700 !important;
 }
 
 /* Force font changes on specific elements */
-.font-futura, .font-display {
-	font-family: 'Orbitron', 'Space Grotesk', 'Futura', 'Futura-Medium', 'Futura Medium', 'FuturaStd-Medium', 'Trebuchet MS', 'Arial', sans-serif !important;
+.font-phillies, .font-display {
+	font-family: 'Playfair Display', 'Merriweather', 'Libre Baskerville', 'Times New Roman', serif !important;
 }
 
 /* Dark mode styles using Tailwind's .dark class */
