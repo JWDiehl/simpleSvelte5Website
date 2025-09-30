@@ -5,23 +5,37 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				'futura': ['Space Grotesk', 'Futura', 'Futura-Medium', 'Futura Medium', 'FuturaStd-Medium', 'Trebuchet MS', 'Arial', 'sans-serif'],
-				'sans': ['Inter', 'Space Grotesk', 'Futura', 'Futura-Medium', 'Futura Medium', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-				'display': ['Space Grotesk', 'Futura', 'Futura-Medium', 'Futura Medium', 'FuturaStd-Medium', 'Trebuchet MS', 'Arial', 'sans-serif']
+				'phillies': ['Playfair Display', 'Merriweather', 'Libre Baskerville', 'Times New Roman', 'serif'],
+				'sans': ['Merriweather', 'Playfair Display', 'Libre Baskerville', 'ui-serif', 'serif'],
+				'display': ['Playfair Display', 'Merriweather', 'Libre Baskerville', 'Times New Roman', 'serif'],
+				'serif': ['Libre Baskerville', 'Merriweather', 'Playfair Display', 'Times New Roman', 'serif']
 			},
 			colors: {
 				primary: {
-					50: '#eff6ff',
-					100: '#dbeafe',
-					200: '#bfdbfe',
-					300: '#93c5fd',
-					400: '#60a5fa',
-					500: '#3b82f6',
-					600: '#2563eb',
-					700: '#1d4ed8',
-					800: '#1e40af',
-					900: '#1e3a8a',
-					950: '#172554'
+					50: '#f0f9ff',
+					100: '#e0f2fe',
+					200: '#bae6fd',
+					300: '#7dd3fc',
+					400: '#38bdf8',
+					500: '#0ea5e9',
+					600: '#0284c7',
+					700: '#0369a1',
+					800: '#075985',
+					900: '#0c4a6e',
+					950: '#082f49'
+				},
+				accent: {
+					50: '#fdf4ff',
+					100: '#fae8ff',
+					200: '#f5d0fe',
+					300: '#f0abfc',
+					400: '#e879f9',
+					500: '#d946ef',
+					600: '#c026d3',
+					700: '#a21caf',
+					800: '#86198f',
+					900: '#701a75',
+					950: '#4a044e'
 				},
 				surface: {
 					50: '#f8fafc',
